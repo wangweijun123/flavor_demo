@@ -37,6 +37,14 @@ android {
             signingConfig = signingConfigs.debug
         }
     }
+
+    flavorDimensions "mode"
+
+    productFlavors {
+        free {}
+        paid {}
+    }
+
 }
 
 flutter {
