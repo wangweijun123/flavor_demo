@@ -37,6 +37,25 @@ android {
             signingConfig = signingConfigs.debug
         }
     }
+
+    sourceSets {
+        dev {
+            assets.srcDirs = ['src/dev/assets']
+        }
+        prod {
+            assets.srcDirs = ['src/prod/assets']
+        }
+    }
+
+    flavorDimensions "mode"
+
+    productFlavors {
+        dev {}
+        prod {}
+    }
+    buildFeatures {
+        buildConfig true
+    }
 }
 
 flutter {

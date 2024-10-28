@@ -105,6 +105,8 @@ class _MyHomePageState extends State<MyHomePage> {
           // wireframe for each widget.
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
+            Image.asset(
+                'images/my_image.jpg'), // 图片位于 assets/ 或 Flavor 特定的 assets 子目录下
             const Text(
               'You have pushed the button this many times:',
             ),
