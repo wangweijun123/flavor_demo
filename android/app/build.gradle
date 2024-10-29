@@ -37,6 +37,26 @@ android {
             signingConfig = signingConfigs.debug
         }
     }
+
+    flavorDimensions "flavor-type"
+    productFlavors {
+        dev {
+            dimension "flavor-type"
+            // ...其他 dev flavor 配置...
+            // 将 dev flavor 的 assets 目录添加到资源目录
+            sourceSets {
+                main.assets.srcDirs += ['src/main/assets/dev']
+            }
+        }
+        prod {
+            dimension "flavor-type"
+            // ...其他 prod flavor 配置...
+            // 将 prod flavor 的 assets 目录添加到资源目录
+            sourceSets {
+                main.assets.srcDirs += ['src/main/assets/prod']
+            }
+        }
+    }
 }
 
 flutter {

@@ -112,6 +112,8 @@ class _MyHomePageState extends State<MyHomePage> {
               '$_counter',
               style: Theme.of(context).textTheme.headlineMedium,
             ),
+            Image.asset(
+                'assets/images/my_image.png') // 图片位于 assets/ 或 Flavor 特定的 assets 子目录下
           ],
         ),
       ),
