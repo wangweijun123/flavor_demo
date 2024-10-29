@@ -61,7 +61,7 @@ flutter:
   uses-material-design: true
 
   assets:
-    - assets/common/common.txt
+    - assets/common/
     - path: assets/paid/
       flavors:
         - paid
