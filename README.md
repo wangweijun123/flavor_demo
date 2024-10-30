@@ -18,3 +18,8 @@ samples, guidance on mobile development, and a full API reference.
 
 flutter build apk --flavor free // 构建 dev flavor
 flutter build apk --flavor paid // 构建 prod flavor
+
+
+https://pub.dev/packages/flutter_flavorizr
+
+https://pub.dev/packages/flutter_flavor
